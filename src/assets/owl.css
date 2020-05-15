@@ -1,0 +1,90 @@
+.hero-carousel .owl-prev, .hero-carousel .owl-next {
+    width: 110px !important;
+    height: 110px !important;
+}
+
+.hero-carousel .owl-prev, .hero-carousel .owl-next {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #fff !important;
+}
+
+.hero-carousel .owl-prev {
+    border-right: 1px solid #f7f8f9 !important;
+}
+
+.hero-carousel .owl-nav {
+    display: flex !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+.hero-carousel .owl-item img {
+    height: 600px !important;
+    object-fit: cover !important;
+    max-width: 100% !important;
+}
+@media (min-width: 992px) {
+    .hero-carousel .owl-item img {
+        height: calc(100vh - 130px) !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-left, .hero-carousel .owl-item img {
+        height: 600px !important;
+    }
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    color: #000 !important;
+    font-size: 1rem !important;
+}
+
+/*=================================
+=            TESTIMONY            =
+=================================*/
+.testi-content .owl-dots {
+    position: absolute !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    display: block !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: -50px !important;
+}
+.testi-content .owl-nav {
+    display: none !important;
+}
+
+.owl-dot {
+    position: relative !important;
+    display: inline-block !important;
+    margin: 0 5px !important;
+    width: 12px !important;
+    height: 12px !important;
+    cursor: pointer !important;
+}
+.owl-dot span {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    outline: none !important;
+    border-radius: 50% !important;
+    background-color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    text-indent: -999em !important;
+    cursor: pointer !important;
+    position: absolute !important;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0) !important;
+    -webkit-transition: box-shadow 0.3s ease, background-color 0.3s ease !important;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease !important;
+}
+.owl-dot.active > span {
+    background-color: transparent !important;
+    box-shadow: 0 0 0 2px white !important;
+}
+/*=====  End of TESTIMONY  ======*/

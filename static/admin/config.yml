@@ -1,0 +1,34 @@
+backend:
+  name: github
+  repo: charif-ayouni/souq
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: dishe
+    label: Dishe
+    folder: dishes
+    create: true
+    fields:
+      - { name: title, required: true, label: Titre}
+      - { name: price, required: true, label: Prix}
+      - { name: ingredients, required: true, label: Ingrédients, widget: markdown}
+      - { name: image, required: true, label: Image, widget: image}
+      - { name: sku, required: false, label: Sku}
+      - { name: path, required: false, label: Path}
+  - name: category
+    label: Catégorie
+    folder: categories
+    create: true
+    fields:
+      - { name: title, required: true, label: Titre}
+      - { name: path, required: false, label: Path}
+  - name: team
+    label: Équipe
+    folder: team
+    create: true
+    fields:
+      - { name: fullname, required: true, label: Nom & prénom}
+      - { name: job, required: true, label: Profession }
+      - { name: image, required: true, label: Image, widget: image}
+      - { name: path, required: false, label: Path}

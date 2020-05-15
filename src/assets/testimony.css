@@ -1,0 +1,24 @@
+#gtco-testimonial {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.testi-content {
+    text-align: center;
+}
+.testi-content .testi-text {
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.6;
+    padding: 30px 60px;
+    font-size: 32px;
+}
+.testi-content .testi-author {
+    font-weight: 500;
+}
+.testi-content .testi-desc span {
+    color: #f34949;
+    font-weight: bold;
+}
