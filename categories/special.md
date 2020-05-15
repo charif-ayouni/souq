@@ -1,0 +1,4 @@
+---
+title: special
+path: special
+---
