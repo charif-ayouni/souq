@@ -6,5 +6,6 @@ ingredients: |-
 
   [](http://localhost:8000/)
 image: /assets/pastillas.png
+categorie: other
 path: pastillas
 ---
