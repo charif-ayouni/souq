@@ -69,7 +69,8 @@ a:hover {
 }
 @media (min-width: 992px) {
     .boxed-page .section-padding {
-        padding-top: 130px;
+        /*padding-top: 130px;*/
+        padding-top: 30px;
         padding-bottom: 130px;
     }
 }
@@ -177,7 +178,8 @@ a:hover {
 }
 @media (min-width: 992px) {
     .hero {
-        height: calc(100vh - 130px);
+        /*height: calc(100vh - 130px);*/
+        height: calc(85vh - 130px);
     }
 }
 

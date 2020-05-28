@@ -11,21 +11,21 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `dishe`,
+        name: `dishes`,
         path: `${__dirname}/dishes`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `category`,
+        name: `categories`,
         path: `${__dirname}/categories`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `team`,
+        name: `teams`,
         path: `${__dirname}/teams`,
       },
     },
@@ -50,12 +50,12 @@ module.exports = {
         icon: `src/images/souq-icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
+    /*{
       resolve: `gatsby-plugin-netlify-identity`,
       options: {
         url: `https://charif.netlify.app` // required!
       }
-    }
+    }*/
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

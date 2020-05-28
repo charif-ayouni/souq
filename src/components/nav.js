@@ -16,7 +16,7 @@ const Nav = ({ siteTitle }) => (
               <Link className="nav-link" to="/">Accueil</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/specialDishes/">Notre spécialité</Link>
+              <Link className="nav-link" to="/dishes/">Notre spécialité</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/team/">l'Équipe</Link>

@@ -3,24 +3,28 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Carousel from "../components/owlCarousel";
-import Welcome from "../components/welcome";
-import SpecialDishes from "../components/specialDishes";
-import Menu from "../components/menu";
-import Testimony from "../components/testimony";
-import Team from "../components/team";
-import Contact from "../components/contact";
+import {graphql} from "gatsby";
 
-const IndexPage = () => (
-    <Layout>
-      <SEO title="Accueil" />
-      <Carousel />
-      <Welcome />
-      <SpecialDishes />
-      <Menu />
-      <Testimony />
-      <Team />
-      <Contact />
-    </Layout>
-);
+export const Query = graphql`{
+    allMarkdownRemark(filter: {frontmatter: {categorie: {eq: "special"}}}) {
+      edges {
+        node {
+          frontmatter {
+            title
+            image
+          }
+        }
+      }
+    }
+}`;
+
+const IndexPage = ({data}) => {
+    return(
+      <Layout >
+        <SEO title = "Accueil" />
+        <Carousel data={data.allMarkdownRemark.edges}/>
+      </Layout>
+    )
+};
 
 export default IndexPage

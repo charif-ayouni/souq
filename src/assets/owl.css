@@ -28,7 +28,7 @@
 }
 @media (min-width: 992px) {
     .hero-carousel .owl-item img {
-        height: calc(100vh - 130px) !important;
+        height: calc(80vh - 130px) !important;
     }
 }
 
