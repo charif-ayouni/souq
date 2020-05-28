@@ -26,7 +26,7 @@ collections:
       - { name: path, required: false, label: Path}
   - name: team
     label: Équipe
-    folder: team
+    folder: teams
     create: true
     fields:
       - { name: fullname, required: true, label: Nom & prénom}
