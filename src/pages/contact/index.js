@@ -17,7 +17,7 @@ const Contact = () => (
                   Contactez-nous
                 </h2>
               </div>
-              <form method="post" name="contact" action="success.js" data-netlify="true">
+              <form method="post" name="contact" action="/contact/success" data-netlify="true">
                 <div className="row">
                   <div className="col-md-12 form-group">
                     <input type="text" className="form-control" id="name" name="name" placeholder="Nom"/>
