@@ -32,7 +32,7 @@ const Contact = () => (
                     <textarea className="form-control" id="message" name="message" rows="6" placeholder="Votre message ..."/>
                   </div>
                   <div className="col-md-12 text-center">
-                    <input type="hidden" name="contact" value="contact" />
+                    <input type="hidden" name="form-name" value="contact" />
                     <button className="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">
                       Envoyer
                     </button>
