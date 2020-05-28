@@ -20,16 +20,40 @@ const Contact = () => (
               <form method="post" name="contact" action="/contact/success" data-netlify="true">
                 <div className="row">
                   <div className="col-md-12 form-group">
-                    <input type="text" className="form-control" id="name" name="name" placeholder="Nom"/>
+                    <input
+                      type="text"
+                      className="form-control"
+                      name="name"
+                      placeholder="Nom"
+                      required
+                    />
                   </div>
                   <div className="col-md-12 form-group">
-                    <input type="text" className="form-control" id="email" name="email" placeholder="Email"/>
+                    <input
+                      type="email"
+                      className="form-control"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
                   </div>
                   <div className="col-md-12 form-group">
-                    <input type="number" className="form-control" id="phoneNumber" name="phoneNumber" placeholder="Téléphone"/>
+                    <input
+                      type="text"
+                      className="form-control"
+                      name="phone"
+                      placeholder="Téléphone"
+                      required
+                    />
                   </div>
                   <div className="col-md-12 form-group">
-                    <textarea className="form-control" id="message" name="message" rows="6" placeholder="Votre message ..."/>
+                    <textarea
+                      className="form-control"
+                      name="message"
+                      rows="6"
+                      placeholder="Votre message ..."
+                      required
+                    />
                   </div>
                   <div className="col-md-12 text-center">
                     <input type="hidden" name="form-name" value="contact" />

@@ -4,7 +4,6 @@ import {Link} from "gatsby"
 
 const Nav = ({siteTitle, current}) => {
 
-  console.log(current);
   var routes = {
     left: [
       {
@@ -43,8 +42,8 @@ const Nav = ({siteTitle, current}) => {
           <ul className="navbar-nav d-flex justify-content-center">
             <div className="d-flex flex-lg-row flex-column">
               {
-                routes.left.map( (route) => {
-                  return <Li route={route} current={current} />
+                routes.left.map( (route, index) => {
+                  return <Li key={index} route={route} current={current} />
                 })
               }
             </div>
@@ -53,8 +52,8 @@ const Nav = ({siteTitle, current}) => {
           <ul className="navbar-nav d-flex justify-content-center">
             <div className="d-flex flex-lg-row flex-column">
               {
-                routes.right.map( (route) => {
-                  return <Li route={route} current={current} />
+                routes.right.map( (route, index) => {
+                  return <Li key={index} route={route} current={current} />
                 })
               }
             </div>
