@@ -25,12 +25,16 @@ const Layout = ({ children }) => {
   return (
     <>
       <div className="boxed-page">
-        <Nav siteTitle={data.site.siteMetadata.title} />
+        <Nav siteTitle={data.site.siteMetadata.title} current={ getCurrentPathname() }/>
         <main>{children}</main>
         <Footer />
       </div>
     </>
   )
+};
+
+function getCurrentPathname(){
+  return typeof window !== 'undefined' ? window.location.pathname : '';
 }
 
 Layout.propTypes = {
