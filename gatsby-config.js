@@ -50,6 +50,18 @@ module.exports = {
         icon: `src/images/souq-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'fr'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-snipcartv3',
+      options: {
+        apiKey: 'MTQ0MzZkOTQtYjhmNC00ZDM3LTgxMTQtZjk1Yzk0Zjc2YzBhNjM3MjYzNTU1NDk4NTA1MzM1',
+      }
+    }
     /*{
       resolve: `gatsby-plugin-netlify-identity`,
       options: {

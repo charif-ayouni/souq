@@ -65,9 +65,25 @@ const Nav = ({siteTitle, current}) => {
 };
 
 const Li = (props) => {
+
+  if(props.route.url === '/cart'){
+    return (
+      <li className="nav-item">
+        <Link className="nav-link header__checkout snipcart-checkout">
+          <span className="lnr lnr-cart mr-2">
+            <span className="snipcart-items-count"></span>
+          </span>
+          {props.route.label}
+        </Link>
+      </li>
+    )
+  }
+
   return (
     <li className={props.route.url === props.current ? 'nav-item active' : 'nav-item'}>
-      <Link className="nav-link" to={props.route.url}>{props.route.label}</Link>
+      <Link className="nav-link" to={props.route.url}>
+        {props.route.label}
+      </Link>
     </li>
   )
 };

@@ -20,7 +20,7 @@ const Left = (props) => {
           <Title title={props.data.title} />
           <Ingredient ingredients={props.data.ingredients} />
           <Price price={props.data.price}/>
-          <a href="/" className="btn-primary mt-3">commander</a>
+          <SnipcartButton product={props.data} />
         </div>
       </div>
       <div className="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
@@ -29,7 +29,6 @@ const Left = (props) => {
     </div>
   )
 };
-
 const Right = (props) => {
   return(
     <div className="row mt-5">
@@ -42,7 +41,7 @@ const Right = (props) => {
           <Title title={props.data.title} />
           <Ingredient ingredients={props.data.ingredients} />
           <Price price={props.data.price}/>
-          <a href="/" className="btn-primary mt-3">commander</a>
+          <SnipcartButton product={props.data} />
         </div>
       </div>
     </div>
@@ -75,6 +74,18 @@ const Ingredient = (props) => {
 };
 const Price = (props) => {
   return <h3 className="special-dishes-price">€ {Number.parseFloat(props.price).toFixed(2)}</h3>
+};
+const SnipcartButton = (props) => {
+  return (
+    <button className="snipcart-add-item btn-primary mt-3"
+            data-item-id={props.product.ID}
+            data-item-price={props.product.price}
+            data-item-url="/dishes"
+            data-item-image={props.product.image}
+            data-item-name={props.product.title}>
+      Ajouter au pannier
+    </button>
+  )
 }
 
 SpecialDishes.propTypes = {};

@@ -147,7 +147,9 @@ a:hover {
 .btn-primary {
     display: inline-block;
     background-color: #f34949;
-    border-color: #f34949;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-color: #f34949 !important;
     color: #fff;
     border-radius: 30px;
     padding: 9px 25px;
@@ -215,6 +217,14 @@ a:hover {
 }
 nav .active a {
     color: #e22104;
+}
+
+span.snipcart-items-count {
+    position: relative;
+    top: -10px;
+    font-size: 15px;
+    color: #f34949;
+    font-weight: bold;
 }
 
 @import url("./menu.css");
