@@ -7,5 +7,6 @@ ingredients: Quelques morceaux de viande g'agneau, 2 oignons râpés, 2 gousses
 image: /assets/couscous-agneau.png
 categorie: special
 ID: 2020-05-29T14:38:18.894Z
+id: "2"
 path: couscous-algerien-agneau
 ---
