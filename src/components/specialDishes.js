@@ -78,7 +78,7 @@ const Price = (props) => {
 const SnipcartButton = (props) => {
   return (
     <button className="snipcart-add-item btn-primary mt-3"
-            data-item-id={props.product.ID}
+            data-item-id={props.product.id}
             data-item-price={props.product.price}
             data-item-url="/dishes"
             data-item-image={props.product.image}

@@ -15,7 +15,7 @@ export const query = graphql`{
             ingredients
             image
             path
-            ID
+            id
           }
         }
       }
