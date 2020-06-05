@@ -6,7 +6,8 @@ ingredients: |-
 
   [](http://localhost:8000/)
 image: /assets/pastillas.png
-categorie: other
+categorie:
+  - other
 ID: 2020-05-29T14:38:44.753Z
 id: "5"
 path: pastillas
