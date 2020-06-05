@@ -42,6 +42,9 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
+    .snipcart-modal__container{
+        top: 100px!important;
+    }
 }
 
 @media (max-width: 767px) {

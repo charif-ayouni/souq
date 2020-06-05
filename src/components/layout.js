@@ -24,6 +24,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <div className="ribbon-wrapper">
+        <div className="ribbon">This is a demo webiste</div>
+      </div>
       <div className="boxed-page">
         <Nav siteTitle={data.site.siteMetadata.title} current={ getCurrentPathname() }/>
         <main>{children}</main>

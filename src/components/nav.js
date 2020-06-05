@@ -69,12 +69,12 @@ const Li = (props) => {
   if(props.route.url === '/cart'){
     return (
       <li className="nav-item">
-        <Link className="nav-link header__checkout snipcart-checkout">
+        <span className="nav-link header__checkout snipcart-checkout" style={{cursor: 'pointer'}}>
           <span className="lnr lnr-cart mr-2">
             <span className="snipcart-items-count"></span>
           </span>
           {props.route.label}
-        </Link>
+        </span>
       </li>
     )
   }
