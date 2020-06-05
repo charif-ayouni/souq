@@ -6,7 +6,8 @@ ingredients: 8 pilons de poulet (fermier de préférence), 12 merguez, 2 boîtes
   café de harissa, 2 cubes de bouillon de boeuf, 3 tomates, 10 navets, 5
   carottes, 2 courgettes, 400 g de pois chiches,
 image: /assets/couscous-poulet-merguez.jpg
-categorie: special
+categorie:
+  - special
 ID: 2020-05-29T14:38:28.841Z
 id: "3"
 path: couscous-poulet-merguez
