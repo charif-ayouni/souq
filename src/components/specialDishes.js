@@ -76,16 +76,29 @@ const Price = (props) => {
   return <h3 className="special-dishes-price">€ {Number.parseFloat(props.price).toFixed(2)}</h3>
 };
 const SnipcartButton = (props) => {
+  let options = getOptions(props.product);
   return (
     <button className="snipcart-add-item btn-primary mt-3"
             data-item-id={props.product.id}
             data-item-price={props.product.price}
             data-item-url="/dishes"
             data-item-image={props.product.image}
-            data-item-name={props.product.title}>
+            data-item-name={props.product.title}
+            data-item-custom1-name="Nombre de personnes"
+            data-item-custom1-options={options}
+            data-item-custom1-required="true"
+    >
       Ajouter au pannier
     </button>
   )
+};
+
+function getOptions(product) {
+  let price_2 = [( 2 * product.price * 95 ) / 100] - product.price; // reduction 5 %
+  let price_4 = [( 4 * product.price * 90 ) / 100] - product.price; // reduction 10 %
+  let price_6 = [( 6 * product.price * 85 ) / 100] - product.price; // reduction 15 %
+
+  return `1|2[${price_2}]|4[${price_4}]|6[${price_6}]`;
 }
 
 SpecialDishes.propTypes = {};
