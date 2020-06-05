@@ -14,8 +14,8 @@ collections:
       - { name: price, required: true, label: Prix}
       - { name: ingredients, required: true, label: Ingrédients, widget: markdown}
       - { name: image, required: true, label: Image, widget: image}
-      - { name: categorie, required: true, label: Catégorie, widget: relation, collection: category, valueField: title, searchFields: ["title"], displayFields: ["title"]}
-      - { name: id, required: true, label: "Identifiant unique", widget: string}
+      - { name: categorie, required: true, label: Catégorie, widget: relation, collection: category, valueField: title, searchFields: ["title"], displayFields: ["title"], multiple: true}
+      - { name: id, required: true, label: 'Identifiant unique', widget: number, valueType: int}
       - { name: path, required: false, label: Path}
   - name: category
     label: Catégorie

@@ -8,7 +8,6 @@ ingredients: |-
 image: /assets/brochettes.jpg
 categorie:
   - other
-ID: 2020-04-22T14:37:52.367Z
 id: "1"
 path: brochettes
 ---

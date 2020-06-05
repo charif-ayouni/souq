@@ -8,7 +8,6 @@ ingredients: 2 cuisses de poulet, 1 belle poignée d’olives vertes, 1 gros
 image: /assets/tajine-poulet-olives.jpg
 categorie:
   - special
-ID: 2020-05-29T14:38:52.025Z
 id: "6"
 path: tadjine-poulet-olives
 ---
